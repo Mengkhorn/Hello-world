@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background: #0073e6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .news-item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .news-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-item h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .news-item p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .news-item a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Latest News</h1>
+</header>
+
+<main class="news-container">
+  <div class="news-item">
+    <h2>News Headline 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at urna nec lacus tempor posuere.</p>
+    <a href="#">Read more...</a>
+  </div>
+
+  <div class="news-item">
+    <h2>News Headline 2</h2>
+    <p>Quisque vitae turpis ac quam fermentum varius. Nulla facilisi. Integer quis felis nec ligula.</p>
+    <a href="#">Read more...</a>
+  </div>
+
+  <div class="news-item">
+    <h2>News Headline 3</h2>
+    <p>Donec et semper turpis. Aliquam erat volutpat. Sed sit amet risus eget lacus fermentum blandit.</p>
+    <a href="#">Read more...</a>
+  </div>
+
+  <div class="news-item">
+    <h2>News Headline 4</h2>
+    <p>Sed consequat, lectus ut volutpat aliquet, lacus orci vehicula nisl, non vestibulum purus lorem non augue.</p>
+    <a href="#">Read more...</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 My News Site. All rights reserved.
+</footer>
+
+</body>
+</html>
